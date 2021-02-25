@@ -74,6 +74,10 @@ a:hover {
     background-size: 300px auto;
     opacity: 0.85;
 }
+.detail img {
+    margin: 10px 95px;
+    width: 100px; border-radius: 8px;
+}
 .hello {
     font-family: 'Open Sans', sans-serif;
     font-weight: Bold;
@@ -96,6 +100,9 @@ a:hover {
     border-radius: 5px;
     padding: 20px;
     margin-top: 20px;
+}
+.detail h3 {
+    text-align: center;
 }
 mark {
     display: inline-block;
@@ -220,13 +227,24 @@ footer ul li a:hover {
         line-height: 2em;
     }
     #content {
-        width: 65%;
+        width: 63%;
     }
     aside {
-        width: 35%;
+        width: 37%;
     }
 }
-@media screen and (max-width: 866px) {
+@media screen and (max-width: 953px) {
+    #content {
+        width: 60%;
+    }
+    aside {
+        width: 40%;
+    }
+    .detail img {
+        width: 90px;
+    }
+}
+@media screen and (max-width: 883px) {
     #content {
         width: 50%;
     }
@@ -262,8 +280,16 @@ footer ul li a:hover {
         #greeting {
             max-width: 300px;
         }
+        .detail img {
+            margin: 8px 80px;
+        }
 }
-@media screen and (max-width: 543px) {
+@media screen and (max-width: 623px) {
+    th, td {
+        font-size: 9pt;
+    }
+}
+@media screen and (max-width: 577px) {
     aside {
         display:inline-block;
         vertical-align: top;
@@ -273,5 +299,18 @@ footer ul li a:hover {
     }
     #content {
         text-align: center;
+    }
+    th, td {
+        font-size: 8pt;
+    }
+    #content h2 {
+        text-align: left;
+    }
+    #content p {
+        text-align: justify;
+    }
+    .detail img {
+        width: 80px;
+        margin: 7px 65px;
     }
 }
